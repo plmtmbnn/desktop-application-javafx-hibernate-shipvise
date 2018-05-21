@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jasapengiriman.controller.KurirController">
+    <children>
+      <TableView fx:id="kurirTB" layoutX="8.0" layoutY="55.0" prefHeight="443.0" prefWidth="908.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="70.0" text="ID" />
+          <TableColumn fx:id="nama" prefWidth="105.0" text="Nama" />
+          <TableColumn fx:id="ttl" prefWidth="200" text="TTL" />
+          <TableColumn fx:id="email" prefWidth="100" text="Email" />
+          <TableColumn fx:id="alamat" prefWidth="155.0" text="Alamat" />
+          <TableColumn fx:id="nomorHp" prefWidth="89.0" text="No. HP" />
+          <TableColumn fx:id="status" prefWidth="187.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button id="glass-grey" layoutX="69.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnTambahKurir" prefHeight="45.0" prefWidth="137.0" stylesheets="@css/pengiriman.css" text="Tambah Kurir" />
+      <Button id="glass-grey" layoutX="339.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnUpdateKurir" prefHeight="45.0" prefWidth="137.0" stylesheets="@css/pengiriman.css" text="Perbaharui Kurir" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#38ccf2" height="132.0" layoutX="565.0" layoutY="507.0" stroke="WHITE" strokeType="INSIDE" width="339.0" />
+      <TextField fx:id="idTF" layoutX="575.0" layoutY="531.0" promptText="masukkan ID kurir" />
+      <ComboBox fx:id="statusCB" layoutX="748.0" layoutY="531.0" prefWidth="150.0" />
+      <Button id="glass-grey" layoutX="766.0" layoutY="584.0" mnemonicParsing="false" onAction="#konfirmasiStatus" prefHeight="35.0" prefWidth="100.0" stylesheets="@css/pengiriman.css" text="Konfirmasi" />
+      <Button id="glass-grey" layoutX="619.0" layoutY="584.0" mnemonicParsing="false" onAction="#hapusDataKurir" prefHeight="35.0" prefWidth="86.0" stylesheets="@css/pengiriman.css" text="Hapus Data" />
+      <Label layoutX="353.0" layoutY="14.0" text="Tabel Data Pengiriman">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+            <Button id="glass-grey" layoutX="20.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnHome" stylesheets="@css/pengiriman.css" text="Home" />
+
+   </children>
+</AnchorPane>

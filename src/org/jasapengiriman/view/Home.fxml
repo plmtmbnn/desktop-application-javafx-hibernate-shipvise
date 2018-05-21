@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jasapengiriman.controller.HomeController">
+   <stylesheets>
+        <URL value="@/org/jasapengiriman/view/css/pengiriman.css" />
+    </stylesheets>
+    <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="219.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../car_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="401.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../packet_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="585.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../kurir_icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="224.0" layoutY="63.0" text="Selamat datang">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="121.0" text="Sistem Aplikasi Shipvise">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button id="btnCar" fx:id="btnCar" blendMode="SRC_ATOP" layoutX="223.0" layoutY="243.0" mnemonicParsing="false" onAction="#btnMobil" opacity="0.0" prefHeight="140.0" prefWidth="140.0" stylesheets="@css/pengiriman.css" text="Button" />
+      <Button layoutX="397.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnPengiriman" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="Button" />
+      <Button layoutX="592.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnKurir" opacity="0.0" prefHeight="150.0" prefWidth="140.0" text="Button" />
+      <Label layoutX="269.0" layoutY="409.0" text="Mobil">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="409.0" text="Pengiriman">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="642.0" layoutY="409.0" text="Kurir">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="666.0" layoutY="29.0" onAction="#btnLogout" stylesheets="@css/pengiriman.css" text="logout">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="haiL" layoutX="616.0" layoutY="17.0" text="Hai, Administrator !" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2db34a" height="124.0" layoutY="478.0" stroke="WHITE" strokeType="INSIDE" width="746.0" />
+      <ImageView fitHeight="27.0" fitWidth="22.0" layoutX="713.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Search.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nomorResiTF" layoutX="557.0" layoutY="489.0" promptText="masukkan nomor resi" />
+      <Button layoutX="709.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnCariNomorResi" opacity="0.0" prefHeight="25.0" prefWidth="33.0" />
+      <Label fx:id="statusL" layoutX="557.0" layoutY="523.0" text="Status :">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Chart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="409.0" text="Statistik">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnStatistik" opacity="0.0" prefHeight="150.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

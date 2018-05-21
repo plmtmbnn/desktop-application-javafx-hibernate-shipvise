@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="1100" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jasapengiriman.controller.PengirimanController">
+    <stylesheets>
+        <URL value="@/org/jasapengiriman/view/css/pengiriman.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="pengirimanTB" layoutX="8.0" layoutY="55.0" prefHeight="443.0" prefWidth="1085">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="70.0" text="No Resi" />
+          <TableColumn fx:id="pengirim" prefWidth="105.0" text="Pengirim" />
+          <TableColumn fx:id="penerima" prefWidth="100" text="Penerima" />
+          <TableColumn fx:id="tanggalPengiriman" prefWidth="100" text="Tgl Kirim" />
+          <TableColumn fx:id="alamat" prefWidth="155.0" text="Alamat Tujuan" />
+          <TableColumn fx:id="status" prefWidth="89.0" text="Status" />
+          <TableColumn fx:id="keterangan" prefWidth="187.0" text="Keterangan" />
+          <TableColumn fx:id="berat" prefWidth="51.0" text="Berat" />         
+          <TableColumn fx:id="jenisPaket" prefWidth="114.0" text="Jenis Paket" />
+          <TableColumn fx:id="harga" prefWidth="106.0" text="Harga" />
+        </columns>
+      </TableView>
+      <Button id="glass-grey" layoutX="108.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnTambahPengiriman" prefHeight="45.0" prefWidth="137.0" stylesheets="@css/pengiriman.css" text="Tambah Pengiriman" />
+      <Button id="glass-grey" layoutX="359.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnUpdatePengiriman" prefHeight="45.0" prefWidth="137.0" stylesheets="@css/pengiriman.css" text="Perbaharui Pengiriman" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#38ccf2" height="132.0" layoutX="735.0" layoutY="507.0" stroke="WHITE" strokeType="INSIDE" width="358.0" />
+      <TextField fx:id="idTF" layoutX="772.0" layoutY="528.0" promptText="masukkan no Resi" />
+      <ComboBox fx:id="statusCB" layoutX="937.0" layoutY="528.0" prefWidth="150.0" />
+      <Button id="glass-grey" layoutX="1010.0" layoutY="579.0" mnemonicParsing="false" onAction="#konfirmasiStatus" prefHeight="35.0" prefWidth="73.0" stylesheets="@css/pengiriman.css" text="Konfirmasi" />
+      <Button id="glass-grey" layoutX="884.0" layoutY="580.0" mnemonicParsing="false" onAction="#hapusDataPengiriman" prefHeight="35.0" prefWidth="89.0" stylesheets="@css/pengiriman.css" text="Hapus Data" />
+      <Label layoutX="398.0" layoutY="14.0" text="Tabel Data Pengiriman">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button id="glass-grey" layoutX="779.0" layoutY="578.0" mnemonicParsing="false" onAction="#btnSavePdf" prefHeight="35.0" prefWidth="73.0" stylesheets="@css/pengiriman.css" text="Save PDF" />
+            <Button id="glass-grey" layoutX="20.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnHome" stylesheets="@css/pengiriman.css" text="Home" />
+
+   </children>
+   
+</AnchorPane>

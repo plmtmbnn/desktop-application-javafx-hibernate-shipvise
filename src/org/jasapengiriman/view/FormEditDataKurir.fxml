@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jasapengiriman.controller.FormEditDataKurirController">
+    <children>  
+      <Label layoutX="209.0" layoutY="29.0" text="Form Kurir">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namaTF" layoutX="198.0" layoutY="121.0" prefHeight="25.0" prefWidth="339.0" promptText="masukkan nama" />
+      <Label layoutX="39.0" layoutY="123.0" text="Nama Kurir" />
+      <Label layoutX="39.0" layoutY="173.0" text="TTL" />
+      <Label layoutX="39.0" layoutY="219.0" text="No. HP" />
+      <Label layoutX="38.0" layoutY="327.0" text="Alamat" />
+       <TextField fx:id="tempatLahirTF" layoutX="201.0" layoutY="169.0" promptText="tempat lahir" />
+      <DatePicker fx:id="tanggalDP" layoutX="365.0" layoutY="169.0" promptText="tanggal pengiriman" />
+      <TextField fx:id="nomorHpTF" layoutX="201.0" layoutY="215.0" prefHeight="25.0" prefWidth="339.0" promptText="masukkan nomor hp" />
+       <TextField fx:id="emailTF" layoutX="200.0" layoutY="267.0" prefHeight="25.0" prefWidth="339.0" promptText="masukkan email" />
+      <TextArea fx:id="alamatTA" layoutX="199.0" layoutY="318.0" prefHeight="76.0" prefWidth="339.0" promptText="masukkan alamat lengkap" />
+      <Button id="glass-grey" layoutX="236.0" layoutY="428.0" mnemonicParsing="false" onAction="#updateData" prefHeight="48.0" prefWidth="129.0" stylesheets="@css/pengiriman.css" text="Update" />
+      <Button id="glass-grey" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnKembali" stylesheets="@css/pengiriman.css" text="Kembali" />
+     
+      
+      <Label layoutX="38.0" layoutY="271.0" text="email" />
+      <Label fx:id="namaL" layoutX="201.0" layoutY="146.0" prefHeight="17.0" prefWidth="339.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="noHpL" layoutX="201.0" layoutY="240.0" prefHeight="17.0" prefWidth="339.0" textFill="RED" />
+      <Label fx:id="emailL" layoutX="199.0" layoutY="292.0" prefHeight="17.0" prefWidth="339.0" textFill="RED" />
+      <Label fx:id="alamatL" layoutX="199.0" layoutY="394.0" prefHeight="17.0" prefWidth="339.0" textFill="RED" />
+      <Label fx:id="ttlL" layoutX="201.0" layoutY="194.0" prefHeight="17.0" prefWidth="149.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>

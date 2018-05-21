@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jasapengiriman.controller.FormMobilController">
+    <children>
+      <Label layoutX="209.0" layoutY="29.0" text="Form Mobil">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="94.0" text="Tipe Mobil" />
+      <Label layoutX="39.0" layoutY="144.0" text="Nomor Pelat Mobil" />
+      <Label layoutX="38.0" layoutY="200.0" text="Keterangan" />
+      <Button id="glass-grey" layoutX="236.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnTambahkanMobil" prefHeight="48.0" prefWidth="129.0" stylesheets="@css/pengiriman.css" text="Tambahkan" />
+      <Button id="glass-grey" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnKembali" stylesheets="@css/pengiriman.css" text="Kembali" />
+      <ComboBox fx:id="tipeCB" layoutX="201.0" layoutY="90.0" prefWidth="150.0" />
+      <TextField fx:id="nomorPelatTX" layoutX="201.0" layoutY="140.0" prefHeight="25.0" prefWidth="185.0" promptText="masukkan nomor pelat mobil" />
+      <TextArea fx:id="keteranganTA" layoutX="199.0" layoutY="191.0" prefHeight="76.0" prefWidth="339.0" promptText="masukkan keterangan mobil" />
+      <Label layoutX="206.0" layoutY="167.0" textFill="RED" fx:id="noPelatL" text="nomor pelat tidak boleh kosong"  />
+      <Label layoutX="201.0" layoutY="274.0" textFill="RED" fx:id="keteranganL" text="keterangan tidak boleh kosong"  />  
+   </children>
+</AnchorPane>
